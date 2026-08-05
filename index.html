@@ -42,8 +42,16 @@
         <h2>yorgute de morango</h2>
         <p class="autor"> Por: Gabrielle Prado</p>
         <p>Este site e para apreender a faze um danoninho muito bom</p>
+        <button>👍🏻<span>0</span></button>
        </div>
-    </main>
-   
+     </main>
 </body>
+<script>
+const botao = document.querySelector("button");
+botao.addEventListener("click",botaoClicado);
+function botaoClicado () {
+    let texto = botao.querySelector("span")
+ texto.textContent++
+}
+</script>
 </html>
